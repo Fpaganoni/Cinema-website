@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Movie</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body class="general-body">
+    <header
+      class="header-container container-fluid d-flex justify-content-around align-items-center"
+    >
+      <figure class="figure m-0 p-0">
+        <img
+          src="assets/logo-movie.png"
+          alt="logo movie"
+          class="figure-img img-fluid img-navbar m-0 p-0 w-180"
+        />
+      </figure>
+      <h4 class="header-frase m-0"><em>Your time to see a good movie</em></h4>
+      <nav
+        class="navbar-container navbar navbar-expand d-flex align-items-center justify-content-around"
+      >
+        <ul class="navbar-list list-unstyled d-flex justify-content-around m-0">
+          <li>
+            <a
+              href="index.html"
+              class="navbar-link active link-opacity-25-hover text-reset text-decoration-none"
+              aria-current="page"
+              >HOME</a
+            >
+          </li>
+          <li>
+            <a
+              href="createMovie.html"
+              class="navbar-link link-opacity-25-hover text-reset text-decoration-none"
+              >CREATE MOVIE</a
+            >
+          </li>
+          <li>
+            <a
+              href="historyCinema.html"
+              class="navbar-link link-opacity-25-hover text-reset text-decoration-none"
+              >CINEMA HISTORY</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container my-5">
+      <section
+        class="container-fluid py-5 d-flex flex-wrap justify-content-center section-movies text-center"
+        id="rootFilms"
+      ></section>
+    </main>
+
+    <footer
+      class="footer-container container-fluid d-flex justify-content-center align-items-center"
+    >
+      <div
+        class="container-fluid d-flex flex-column align-items-center justify-content-center"
+      >
+        <ul class="list-group list-group-horizontal">
+          <li class="list-footer list-group-item px-5">
+            <a class="anchor-footer" href="#">Terms and Privacy Notice</a>
+          </li>
+          <li class="list-footer list-group-item px-5">
+            <a class="anchor-footer" href="#">Cookie Notice</a>
+          </li>
+          <li class="list-footer list-group-item px-5">
+            <a class="anchor-footer" href="#">Send us feedback</a>
+          </li>
+          <li class="list-footer list-group-item px-5">
+            <a class="anchor-footer" href="#">Help</a>
+          </li>
+        </ul>
+        <small class="derechos-autor mt-4"
+          >© 1996-2025, retroMovie.com, Inc. or its affiliates</small
+        >
+      </div>
+
+      <figure class="figure-img figure-footer mb-0">
+        <img
+          class="img-fluid img-footer"
+          src="./assets/logo-movie.png"
+          alt="logo de la empresa"
+        />
+      </figure>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./public/bundle.js"></script>
+  </body>
+</html>

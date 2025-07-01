@@ -1,0 +1,150 @@
+:root {
+  --black: #141414;
+  --white: #e5e5e5;
+  --red: #b9090c;
+  --gray: #6d6d6e66;
+  --dark-gray: #333333;
+  --dark-red: #6b0303;
+}
+
+.general-body {
+  background-color: var(--gray);
+  color: var(--white);
+  font-family: "Cinzel", serif;
+}
+
+/** NAVBAR */
+
+.header-container {
+  background-color: var(--black);
+  height: 80px;
+  position: relative;
+  box-shadow: -1px -2px 19px 0px var(--gray);
+}
+
+.navbar-container {
+  width: 38%;
+}
+
+.header-frase {
+  width: 62%;
+  text-align: end;
+  font-size: 1.4rem;
+}
+
+.navbar-list {
+  width: 60%;
+}
+
+.navbar-link {
+  font-size: 0.875rem;
+  transition: opacity 300ms ease-in-out;
+
+  &&:hover {
+    opacity: 0.3;
+  }
+}
+
+.img-navbar {
+  width: 180px;
+  position: absolute;
+  left: 70px;
+  top: 10px;
+  background-color: currentcolor;
+  border-radius: 40%;
+  box-shadow: 2px 2px 3px var(--black);
+  cursor: pointer;
+}
+
+/** SECTION HISTORY */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  color: var(--black);
+}
+
+.sections-history {
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.history-1 {
+  background-image: url(/assets/retro-1.jpg);
+}
+
+.history-2 {
+  background-image: url(/assets/retro-2.jpg);
+}
+
+.history-3 {
+  background-image: url(/assets/retro-5.jpg);
+}
+
+.history-4 {
+  background-image: url(/assets/retro-8.jpg);
+}
+
+.history-5 {
+  background-image: url(/assets/retro-7.jpg);
+}
+
+.details-container {
+  width: 650px;
+  padding: 1.8rem;
+  border-radius: 5px;
+  background-color: rgb(20, 20, 20, 0.95);
+}
+
+.titles {
+  margin-bottom: 10px;
+}
+
+/** FOOTER STYLES */
+
+.footer-container {
+  width: 100%;
+  height: 200px;
+  background-color: var(--dark-gray);
+  position: relative;
+}
+
+.figure-footer {
+  width: 140px;
+  height: 135px;
+}
+
+.img-footer {
+  width: 180px;
+  background-color: currentcolor;
+  border-radius: 40%;
+  box-shadow: -2px -2px 3px var(--black);
+  cursor: pointer;
+  position: absolute;
+  top: -45px;
+  right: 90px;
+}
+
+.list-footer {
+  background-color: var(--dark-red);
+  transition: background 200ms ease-in-out;
+
+  &&:hover {
+    background-color: var(--red);
+    cursor: pointer;
+  }
+}
+
+.list-footer .anchor-footer {
+  text-decoration: none;
+  list-style: none;
+  appearance: none;
+  color: var(--white);
+  font-weight: bold;
+}

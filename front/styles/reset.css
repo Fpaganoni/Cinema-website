@@ -1,0 +1,74 @@
+/* Reset CSS - Resetear todos los estilos por defecto */
+
+/*  Eliminamos márgenes y rellenos predeterminados */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Establecer una fuente base coherente */
+body {
+  font-family: Arial, sans-serif; /* Fuente genérica */
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Aseguramos que no haya subrayado en los enlaces */
+a {
+  text-decoration: none;
+  color: inherit; /* heredar el color del texto */
+}
+
+/* Eliminar los bordes de los botones y otros elementos interactivos */
+button,
+input,
+select,
+textarea {
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+}
+
+/*  Ajustamos imágenes para que no rompan el flujo del layout */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Evitamos que los elementos de formulario agreguen estilos predeterminados */
+input,
+textarea,
+select {
+  /* Elimina los estilos predeterminados del navegador */
+  background-color: transparent; /* Fondo transparente */
+}
+
+input:focus {
+  box-shadow: none; /* Eliminar sombra */
+  background-color: white; /* Resetear fondo */
+  color: inherit; /* Mantener color de texto heredado */
+}
+
+/* Reset para los campos de formulario */
+input,
+button,
+select,
+textarea {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+}
+
+/* reset list */
+
+ul,
+ol {
+  list-style: none;
+}
