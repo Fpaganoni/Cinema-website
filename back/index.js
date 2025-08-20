@@ -1,12 +1,20 @@
+// index.js
 const app = require("./src/services/server");
 const DBconect = require("./config/DBconect");
 
-DBconect().then((res) => {
-  try {
-    app.listen(3000, () => {
-      console.log("Server is running on port 3000");
+const PORT = process.env.PORT || 3000;
+
+DBconect()
+  .then(() => {
+    // Escuchar solo si la conexión a la DB es exitosa
+    app.listen(PORT, () => {
+      console.log(`Server is running on port ${PORT}`);
     });
-  } catch (err) {
-    console.log(err);
-  }
-});
+  })
+  .catch((err) => {
+    // Si la conexión falla, no inicies el servidor
+    console.error(
+      "Failed to connect to the database, server not started:",
+      err
+    );
+  });
