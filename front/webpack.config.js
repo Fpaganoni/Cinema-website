@@ -9,6 +9,12 @@ module.exports = {
     path: path.resolve(__dirname, "public"),
     filename: "bundle.js",
   },
+  rules: [
+    {
+      test: /\.css$/, // Expresión regular para archivos .css
+      use: ["style-loader", "css-loader"], // Usa estos loaders
+    },
+  ],
   plugins: [
     new Dotenv({
       path: path.resolve(__dirname, ".env"), // Asegura que apunta a tu archivo .env
