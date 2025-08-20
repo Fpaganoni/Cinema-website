@@ -17,5 +17,15 @@ module.exports = {
       template: "./index.html", // Ruta a tu archivo index.html original
       filename: "index.html", // Nombre del archivo de salida
     }),
+    // Plugin para createMovie.html
+    new HtmlWebpackPlugin({
+      template: "./createMovie.html",
+      filename: "createMovie.html",
+    }),
+    // Plugin para historyCinema.html
+    new HtmlWebpackPlugin({
+      template: "./historyCinema.html",
+      filename: "historyCinema.html",
+    }),
   ],
 };
