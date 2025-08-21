@@ -1,8 +1,3 @@
-import "../styles/reset.css";
-import "../styles/style.css";
-import "../styles/createMovie.css";
-import "../styles/historyCinema.css";
-
 // index.js
 const app = require("./src/services/server");
 const DBconect = require("./config/DBconect");
