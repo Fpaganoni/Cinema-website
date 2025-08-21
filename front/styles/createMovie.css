@@ -58,12 +58,11 @@
 .create-movie-container {
   display: flex;
   color: var(--white);
-  height: 100vh;
 }
 
 .img-container {
   width: 50%;
-  height: 100%;
+
   background-image: url("https://ik.imagekit.io/p2ho5d9bi/Cinema/retro-3.jpg?updatedAt=1755766253173");
   background-position: center;
   background-size: cover;
