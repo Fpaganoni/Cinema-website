@@ -1,7 +1,5 @@
-Yes, of course. Here is a professional and comprehensive README.md file for your project, written in English.
-
-README.md
 Cinema Website
+
 Welcome to the Cinema Website repository! This is a full-stack web application designed to explore and manage a collection of movies. The frontend is built with modern web technologies and the backend is a robust API for handling movie data.
 
 🚀 Technologies Used
