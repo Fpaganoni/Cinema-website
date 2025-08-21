@@ -68,9 +68,6 @@ module.exports = {
       filename: "historyCinema.html",
     }),
   ],
-
-  // Directorio base para las rutas relativas en los archivos de configuración
-  context: path.resolve(__dirname, "front"),
 };
 
 // const Dotenv = require("dotenv-webpack");
