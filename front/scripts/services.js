@@ -2,7 +2,7 @@ const renderFilms = require("./modules/renderFilms");
 
 const backURL = process.env.NEXT_PUBLIC_BASE_URL;
 
-// USAR AXIOS Y PROMESAS O FUNCIONES ASTNC/AWAIT PARA HACER LA LLAMADA A LA API Y MANEJAR ERRORES
+// Use AXIOS and Promises or Asynch/Await Functions to Make API Calls and Handle Errors
 
 const axios = require("axios");
 
@@ -18,11 +18,10 @@ export const fetchMovies = async () => {
 };
 
 export const postNewMovie = async (movieData) => {
-  // pasare el objeto movieData con axios a la DB
+  // pass the movieData object with axios to the DB
   try {
     return await axios.post(`${backURL}/movies`, movieData);
   } catch (error) {
-    console.error("Error adding movie:", error);
     alert("There was an error adding the movie");
   }
 };

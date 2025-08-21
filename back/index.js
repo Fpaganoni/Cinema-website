@@ -6,15 +6,12 @@ const PORT = process.env.PORT || 3000;
 
 DBconect()
   .then(() => {
-    // Escuchar solo si la conexión a la DB es exitosa
+    // Listen only if the database connection is successful
     app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}`);
     });
   })
   .catch((err) => {
-    // Si la conexión falla, no inicies el servidor
-    console.error(
-      "Failed to connect to the database, server not started:",
-      err
-    );
+    // If the connection fails, do not start the server.
+    throw new Error(`Database connection failed: ${err.message}`);
   });

@@ -7,7 +7,7 @@ const renderFilms = (data) => {
     return;
   }
 
-  // Usamos un fragmento para evitar reflows múltiples
+  // We use a fragment to avoid multiple reflows
   const fragment = document.createDocumentFragment();
 
   data.forEach((movie) => {
@@ -15,7 +15,7 @@ const renderFilms = (data) => {
     fragment.appendChild(movieCreated);
   });
 
-  // Finalmente, agregamos el fragmento al DOM
+  // Finally we add the fragment to the container
   containerFilms.appendChild(fragment);
 };
 

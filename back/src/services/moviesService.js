@@ -26,12 +26,10 @@ const convertToMovie = (movies) => {
 };
 
 module.exports = {
-  // Servicio para obtener peliculas de la base de datos
+  // Service to get movies from DB
   getMovies: async () => {
     try {
-      // console.log("Fetching movies from the database...");
       const movies = await Movie.find();
-      // console.log("Movies fetched:", movies);
 
       return convertToMovie(movies);
     } catch (error) {
@@ -39,13 +37,11 @@ module.exports = {
     }
   },
 
-  // Servicio para crear una nueva pelicula
+  // Service to create the movie
   postMovie: async (movie) => {
     try {
-      const newMovie = new Movie(movie); // se crea una nueva instancia de la clase Movie
-      await newMovie.save(); // se guarda la nueva pelicula en la base de datos
-
-      console.log("Movie post:", newMovie);
+      const newMovie = new Movie(movie); // Create new instance of Movie with the provided data
+      await newMovie.save(); // Save the new movie to the database
     } catch (error) {
       throw new Error(`Error creating movie: ${error.message}`);
     }
