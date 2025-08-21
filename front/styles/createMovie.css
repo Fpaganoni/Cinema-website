@@ -61,7 +61,7 @@
 
 .img-container {
   width: 50%;
-  background-image: url(/assets/retro-3.jpg);
+  background-image: url("https://ik.imagekit.io/p2ho5d9bi/Cinema/retro-3.jpg?updatedAt=1755766253173");
   background-position: center;
   background-size: cover;
 }
@@ -177,6 +177,7 @@ input[type="number"] {
   padding: 10px 10px;
   border-radius: 5px;
   font-weight: bold;
+  color: var(--white);
 
   &&:hover {
     color: var(--black);
