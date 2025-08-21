@@ -47,7 +47,7 @@ module.exports = {
   plugins: [
     // Plugin para cargar las variables de entorno desde .env
     new Dotenv({
-      path: "./.env",
+      path: path.resolve(__dirname, "..", ".env"),
     }),
 
     // Plugin para generar el archivo index.html.
