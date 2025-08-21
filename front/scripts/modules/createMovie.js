@@ -7,7 +7,7 @@ const createMovie = (movie) => {
   // create movie card
   cardContainer.innerHTML = `
       <img class="img-films " src=${poster} alt="${title}">
-      <div class="d-flex align-items-center justify-content-center flex-column gap-3 info-film-container color-white">
+      <div class="d-flex align-items-center justify-content-center flex-column gap-3 info-film-container">
         <h4 class="title-film mb-4">${title}</h4>
         <h5 class="director-film">Director: ${director}</h5>
         <p class="other-info-films">Year: ${year}</p>
