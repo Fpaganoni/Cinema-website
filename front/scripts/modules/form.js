@@ -1,4 +1,5 @@
 const axios = require("axios");
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
 const form = document.getElementById("form-add-movie");
 
@@ -10,7 +11,7 @@ const form = document.getElementById("form-add-movie");
 const createMovie = async (movieData) => {
   // Hacer la solicitud POST con Axios
   try {
-    await axios.post("http://localhost:3000/movies", movieData);
+    await axios.post(`${baseUrl}/movies`, movieData);
     alert("La película se ha añadido correctamente.");
   } catch (error) {
     console.error("Error adding movie:", error);

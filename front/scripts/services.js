@@ -1,6 +1,6 @@
 const renderFilms = require("./modules/renderFilms");
 
-const backURL = process.env.BASE_URL;
+const backURL = process.env.NEXT_PUBLIC_BASE_URL;
 
 // USAR AXIOS Y PROMESAS O FUNCIONES ASTNC/AWAIT PARA HACER LA LLAMADA A LA API Y MANEJAR ERRORES
 
