@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
+const webpack = require("webpack");
 
 module.exports = {
   // El punto de entrada principal de tu aplicación, donde se importan otros archivos.
@@ -50,6 +51,13 @@ module.exports = {
       path: path.resolve(__dirname, "..", ".env"),
     }),
 
+    // Plugin para definir NEXT_PUBLIC_BASE_URL
+    new webpack.DefinePlugin({
+      "process.env.NEXT_PUBLIC_BASE_URL": JSON.stringify(
+        process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
+      ),
+    }),
+
     // Plugin para generar el archivo index.html.
     new HtmlWebpackPlugin({
       template: "./index.html",
@@ -69,41 +77,3 @@ module.exports = {
     }),
   ],
 };
-
-// const Dotenv = require("dotenv-webpack");
-// const path = require("path");
-// const HtmlWebpackPlugin = require("html-webpack-plugin");
-
-// module.exports = {
-//   entry: "./scripts/index.js",
-
-//   output: {
-//     path: path.resolve(__dirname, "public"),
-//     filename: "bundle.js",
-//   },
-//   rules: [
-//     {
-//       test: /\.css$/, // Expresión regular para archivos .css
-//       use: ["style-loader", "css-loader"], // Usa estos loaders
-//     },
-//   ],
-//   plugins: [
-//     new Dotenv({
-//       path: path.resolve(__dirname, ".env"), // Asegura que apunta a tu archivo .env
-//     }),
-//     new HtmlWebpackPlugin({
-//       template: "./index.html", // Ruta a tu archivo index.html original
-//       filename: "index.html", // Nombre del archivo de salida
-//     }),
-//     Plugin para createMovie.html
-//     new HtmlWebpackPlugin({
-//       template: "./createMovie.html",
-//       filename: "createMovie.html",
-//     }),
-//     Plugin para historyCinema.html
-//     new HtmlWebpackPlugin({
-//       template: "./historyCinema.html",
-//       filename: "historyCinema.html",
-//     }),
-//   ],
-// };
