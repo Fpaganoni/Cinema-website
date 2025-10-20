@@ -1,5 +1,7 @@
 Cinema Website
 
+LIVE HERE: https://cinema-website-kohl.vercel.app/
+
 Welcome to the Cinema Website repository! This is a full-stack web application designed to explore and manage a collection of movies. The frontend is built with modern web technologies and the backend is a robust API for handling movie data.
 
 🚀 Technologies Used
@@ -96,5 +98,3 @@ This command will compile the frontend files into the public folder. You can the
 ✍️ Author
 Franco Paganoni
 
-📄 License
-This project is licensed under the MIT License - see the  file for details.
